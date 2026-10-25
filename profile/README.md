@@ -38,7 +38,8 @@ We also publish [where Butterfly still trails](https://github.com/butterfly-osm/
 
 ```python
 import pyarrow.flight as fl
-client = fl.connect("grpc://localhost:3002")   # REST on 3001, Flight on 3002
+# REST on :3001 for humans, Flight on :3002 for code
+client = fl.connect("grpc://localhost:3002")
 ```
 
 <sub>Built in Belgium for the OpenStreetMap community. Map data © OpenStreetMap contributors.</sub>
